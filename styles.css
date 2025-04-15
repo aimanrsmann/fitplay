@@ -1,0 +1,188 @@
+body {
+    background-color: #E0F2E9 !important;
+    color: #043927 !important;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #04724D !important;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #03543F !important;
+}
+
+.btn {
+    background-color: #057054 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #037F5B !important;
+}
+
+footer {
+    background-color: #04724D !important;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.custom-header {
+    background-color: #04724D !important;
+}
+
+.custom-hero {
+    background-color: #04724D !important;
+    color: white !important;
+}
+
+.custom-footer {
+    background-color: #04724D !important;
+}
+
+/* NEW ADDED CSS */
+/* Navbar Styling */
+nav {
+    background-color: #1E3A2D;
+    /* Dark green */
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Navigation Links */
+.nav-link {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgba(53, 3, 3, 0.2);
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-radius: 5px;
+    color:#ebebeb;
+}
+
+/* Sports Dropdown */
+.group {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    /* background-color: transparent; */
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-btn:hover {
+    background-color: #14532D;
+    /* Darker green */
+}
+
+/* Dropdown container */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    /* background: #14532D; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    /* Prevents flickering */
+}
+
+/* Keep dropdown visible when hovering over the button OR the dropdown */
+.group:hover .dropdown-menu,
+.dropdown-menu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #0F381F;
+}
+
+.slot-btn:disabled {
+    background-color: #ef4444 !important;
+    /* Tailwind red-500 */
+    color: white !important;
+    cursor: not-allowed !important;
+}
+
+.slot-btn div {
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none;
+}
